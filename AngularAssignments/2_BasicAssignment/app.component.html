@@ -1,0 +1,11 @@
+<!-- <h1>hii,I am in app component</h1> -->
+<!-- <app-data-binding></app-data-binding> -->
+
+ <!-- <h2>{{message|pipeAssignment}}</h2>   -->
+
+ <!-- <app-warning-alert></app-warning-alert>
+ <app-success-alert></app-success-alert> -->
+ <label>UserName</label>
+<input type="text" class="form-control" [(ngModel)]="username">
+ <p>{{username}}</p>
+ <button class="btn btn-primary"  [disabled]="username==''" (click)="username='' ">Reset Button</button>
